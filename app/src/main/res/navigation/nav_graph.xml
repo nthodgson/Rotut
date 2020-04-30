@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/sign_in">
+    <fragment
+        android:id="@+id/sign_in"
+        android:name="com.example.rotut.sign_in"
+        android:label="sign_in"
+        tools:layout="@layout/sign_in">
+        <action
+            android:id="@+id/action_sign_in_to_home"
+            app:destination="@id/home" />
+        <action
+            android:id="@+id/action_sign_in_to_sign_up"
+            app:destination="@id/sign_up" />
+    </fragment>
+    <fragment
+        android:id="@+id/sign_up"
+        android:name="com.example.rotut.sign_up"
+        android:label="sign_up"
+        tools:layout="@layout/sign_up"/>
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.rotut.home"
+        android:label="home"
+        tools:layout="@layout/home">
+        <action
+            android:id="@+id/action_home_to_search"
+            app:destination="@id/search" />
+        <action
+            android:id="@+id/action_home_to_account"
+            app:destination="@id/account" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.rotut.profile"
+        android:label="profile"
+        tools:layout="@layout/profile"/>
+    <fragment
+        android:id="@+id/account"
+        android:name="com.example.rotut.account"
+        android:label="account"
+        tools:layout="@layout/account">
+        <action
+            android:id="@+id/action_account_to_profile"
+            app:destination="@id/profile" />
+        <action
+            android:id="@+id/action_account_to_wallet"
+            app:destination="@id/wallet" />
+        <action
+            android:id="@+id/action_account_to_edit_account"
+            app:destination="@id/edit_account" />
+        <action
+            android:id="@+id/action_account_to_settings"
+            app:destination="@id/settings" />
+    </fragment>
+    <fragment
+        android:id="@+id/edit_account"
+        android:name="com.example.rotut.edit_account"
+        android:label="edit_account"
+        tools:layout="@layout/edit_account"/>
+    <fragment
+        android:id="@+id/search"
+        android:name="com.example.rotut.search"
+        android:label="search"
+        tools:layout="@layout/search"/>
+    <fragment
+        android:id="@+id/wallet"
+        android:name="com.example.rotut.wallet"
+        android:label="wallet"
+        tools:layout="@layout/wallet"/>
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.rotut.settings"
+        android:label="settings"
+        tools:layout="@layout/settings"/>
+</navigation>

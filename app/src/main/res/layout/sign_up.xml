@@ -39,18 +39,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/rotut" />
 
-    <Button
-        android:id="@+id/createAccount"
-        android:layout_width="221dp"
-        android:layout_height="53dp"
-        android:layout_marginBottom="28dp"
-        android:background="#009EC7"
-        android:text="Create Account"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <EditText
         android:id="@+id/firstName"
         android:layout_width="309dp"
@@ -107,6 +95,18 @@
         android:ems="10"
         android:hint="School Email"
         android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/createAccount"
+        android:layout_width="221dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="32dp"
+        android:background="#009EC7"
+        android:text="Create Account"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

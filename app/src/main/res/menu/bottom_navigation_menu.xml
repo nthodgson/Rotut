@@ -2,11 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/action_search"
         android:title="@string/home_icon"
-        android:icon="@drawable/homeIcon" />
+        android:icon="@drawable/home_icon" />
     <item android:id="@+id/action_settings"
         android:title="@string/search_icon"
-        android:icon="@drawable/searchIcon" />
+        android:icon="@drawable/search_icon" />
     <item android:id="@+id/action_navigation"
         android:title="@string/account_icon"
-        android:icon="@drawable/accountIcon" />
+        android:icon="@drawable/account_icon" />
 </menu>

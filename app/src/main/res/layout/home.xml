@@ -62,7 +62,7 @@
         android:adjustViewBounds="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchBar"
-        app:srcCompat="@drawable/previousSessions" />
+        app:srcCompat="@drawable/previous_sessions" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -74,7 +74,7 @@
         app:layout_constraintHorizontal_bias="0.692"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/searchBar"
-        app:srcCompat="@drawable/upcomingSessions" />
+        app:srcCompat="@drawable/upcoming_sessions" />
 
     <TextView
         android:id="@+id/textView2"

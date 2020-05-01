@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:ignore="ExtraText">
     tools:context=".ui.login.LoginActivity">
@@ -35,7 +36,7 @@
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="205dp"
         android:layout_height="58dp"
-        android:background="#C1C1C1"
+        android:background="#FFFFFF"
         android:text="Sign In"
         android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"

@@ -24,11 +24,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.rotut.R;
-import com.example.rotut.ui.login.LoginViewModel;
-import com.example.rotut.ui.login.LoginViewModelFactory;
 
 public class LoginActivity extends AppCompatActivity {
-
     private LoginViewModel loginViewModel;
 
     @Override
@@ -36,7 +33,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE); //will hide the title
         getSupportActionBar().hide(); // hide the title bar
-        setContentView(R.layout.sign_in);
+
         loginViewModel = ViewModelProviders.of(this, new LoginViewModelFactory())
                 .get(LoginViewModel.class);
 

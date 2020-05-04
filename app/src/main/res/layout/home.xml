@@ -100,7 +100,7 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
-        android:layout_width="411dp"
+        android:layout_width="match_parent"
         android:layout_height="68dp"
         android:layout_gravity="bottom"
         android:background="#009EC7"

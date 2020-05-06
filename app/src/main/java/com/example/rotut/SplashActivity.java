@@ -1,4 +1,4 @@
-package com.example.rotut.ui.login;
+package com.example.rotut;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.rotut.R;
+import com.example.rotut.ui.login.LoginActivity;
 
 public class SplashActivity extends AppCompatActivity {
 

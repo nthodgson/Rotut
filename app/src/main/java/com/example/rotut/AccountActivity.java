@@ -6,7 +6,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -22,6 +24,8 @@ public class AccountActivity extends AppCompatActivity {
         BottomNavigationView bottomNavigation;
         bottomNavigation = findViewById(R.id.bottom_navigation);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
+
+        configureNavigation();
     }
 
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
@@ -40,4 +44,38 @@ public class AccountActivity extends AppCompatActivity {
                     return false;
                 }
             };
+
+    private void configureNavigation() {
+        Button profileButton = (Button) findViewById(R.id.profile);
+        profileButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(AccountActivity.this, ProfileActivity.class));
+            }
+        });
+
+        Button walletButton = (Button) findViewById(R.id.wallet);
+        walletButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(AccountActivity.this, WalletActivity.class));
+            }
+        });
+
+        Button editAccButton = (Button) findViewById(R.id.editAccount);
+        editAccButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(AccountActivity.this, EditAccActivity.class));
+            }
+        });
+
+        Button settingsButton = (Button) findViewById(R.id.settings);
+        settingsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(AccountActivity.this, SettingsActivity.class));
+            }
+        });
+    }
 }

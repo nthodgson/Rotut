@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".ui.login.LoginActivity"
+    tools:context=".SignInActivity"
     tools:ignore="ExtraText">
 
     <ImageView

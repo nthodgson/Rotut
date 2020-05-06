@@ -30,13 +30,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Settings"
+        android:text="@string/settings"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView14"
@@ -55,13 +56,14 @@
         app:layout_constraintStart_toStartOf="@+id/imageView14"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.47"
-        app:srcCompat="@drawable/menu" />
+        app:srcCompat="@drawable/menu"
+        android:contentDescription="@string/todo" />
 
     <Switch
         android:id="@+id/switch3"
         android:layout_width="374dp"
         android:layout_height="52dp"
-        android:text="Message Notice"
+        android:text="@string/message_notice"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/view1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -82,7 +84,7 @@
         android:id="@+id/switch4"
         android:layout_width="374dp"
         android:layout_height="52dp"
-        android:text="Show my location"
+        android:text="@string/show_my_location"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -105,13 +107,14 @@
         android:id="@+id/textView34"
         android:layout_width="374dp"
         android:layout_height="52dp"
-        android:text="Check for Update"
+        android:text="@string/check_for_update"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:clickable="true"
         app:layout_constraintBottom_toTopOf="@+id/view3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view2" />
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        android:focusable="true" />
 
     <View
         android:id="@+id/view3"
@@ -128,14 +131,14 @@
         android:id="@+id/textView35"
         android:layout_width="374dp"
         android:layout_height="52dp"
-        android:text="Q and A Center"
+        android:text="@string/q_and_a_center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view3"
         app:layout_constraintBottom_toTopOf="@+id/view4"
-        />
+        android:focusable="true" />
 
     <View
         android:id="@+id/view4"
@@ -152,14 +155,14 @@
         android:id="@+id/textView36"
         android:layout_width="374dp"
         android:layout_height="52dp"
-        android:text="About Us"
+        android:text="@string/about_us"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view4"
         app:layout_constraintBottom_toTopOf="@+id/view4"
-        />
+        android:focusable="true" />
     <View
         android:id="@+id/view5"
         android:layout_width="match_parent"
@@ -182,7 +185,8 @@
         app:layout_constraintBottom_toTopOf="@+id/view3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view2"
-        app:srcCompat="@drawable/ic_arrow_forward_gray_24dp" />
+        app:srcCompat="@drawable/ic_arrow_forward_gray_24dp"
+        android:contentDescription="@string/todo" />
 
     <ImageView
         android:id="@+id/imageView29"
@@ -195,7 +199,8 @@
         app:layout_constraintBottom_toTopOf="@+id/view4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view3"
-        app:srcCompat="@drawable/ic_arrow_forward_gray_24dp" />
+        app:srcCompat="@drawable/ic_arrow_forward_gray_24dp"
+        android:contentDescription="@string/todo" />
 
     <ImageView
         android:id="@+id/imageView30"
@@ -209,14 +214,15 @@
         app:layout_constraintBottom_toTopOf="@+id/view5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view4"
-        app:srcCompat="@drawable/ic_arrow_forward_gray_24dp" />
+        app:srcCompat="@drawable/ic_arrow_forward_gray_24dp"
+        android:contentDescription="@string/todo" />
 
     <Button
         android:id="@+id/sign_out_button"
         android:layout_width="188dp"
         android:layout_height="58dp"
         android:background="@android:color/holo_blue_light"
-        android:text="Sign Out"
+        android:text="@string/sign_out"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"

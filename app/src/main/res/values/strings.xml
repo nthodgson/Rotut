@@ -31,4 +31,12 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="todo">TODO</string>
+    <string name="settings">Settings</string>
+    <string name="message_notice">Message Notice</string>
+    <string name="show_my_location">Show my location</string>
+    <string name="check_for_update">Check for Update</string>
+    <string name="q_and_a_center">Q and A Center</string>
+    <string name="about_us">About Us</string>
+    <string name="sign_out">Sign Out</string>
 </resources>

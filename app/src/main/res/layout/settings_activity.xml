@@ -75,14 +75,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switch3"
-        app:layout_constraintBottom_toTopOf="@+id/textView33"
+        app:layout_constraintBottom_toTopOf="@+id/switch4"
         />
 
-    <TextView
-        android:id="@+id/textView33"
+    <Switch
+        android:id="@+id/switch4"
         android:layout_width="374dp"
         android:layout_height="52dp"
-        android:text="Font and Size"
+        android:text="Show my location"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -96,7 +96,7 @@
         android:background="@android:color/darker_gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView33"
+        app:layout_constraintTop_toBottomOf="@+id/switch4"
         app:layout_constraintBottom_toTopOf="@id/textView34"
 
         />
@@ -170,18 +170,6 @@
         app:layout_constraintTop_toBottomOf="@+id/textView36"
         />
 
-    <ImageView
-        android:id="@+id/imageView27"
-        android:layout_width="35dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="11dp"
-        android:layout_marginRight="11dp"
-        android:layout_marginBottom="7dp"
-        app:layout_constraintBottom_toTopOf="@+id/view2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view1"
-        app:srcCompat="@drawable/ic_arrow_forward_gray_24dp" />
 
     <ImageView
         android:id="@+id/imageView28"
@@ -224,7 +212,7 @@
         app:srcCompat="@drawable/ic_arrow_forward_gray_24dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/sign_out_button"
         android:layout_width="188dp"
         android:layout_height="58dp"
         android:background="@android:color/holo_blue_light"

@@ -6,7 +6,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
+import android.widget.ImageButton;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -23,6 +25,8 @@ public class SettingsActivity extends AppCompatActivity {
         BottomNavigationView bottomNavigation;
         bottomNavigation = findViewById(R.id.bottom_navigation);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
+
+        configureNavigation();
     }
 
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
@@ -42,4 +46,13 @@ public class SettingsActivity extends AppCompatActivity {
                     return false;
                 }
             };
+    private void configureNavigation() {
+        ImageButton signUpButton = (ImageButton) findViewById(R.id.backArrow4);
+        signUpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SettingsActivity.this, AccountActivity.class));
+            }
+        });
+    }
 }

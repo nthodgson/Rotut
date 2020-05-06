@@ -5,6 +5,7 @@ import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -23,7 +24,9 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.rotut.HomeActivity;
 import com.example.rotut.R;
+import com.example.rotut.SignUpActivity;
 
 public class LoginActivity extends AppCompatActivity {
     private LoginViewModel loginViewModel;
@@ -115,6 +118,26 @@ public class LoginActivity extends AppCompatActivity {
                 loadingProgressBar.setVisibility(View.VISIBLE);
                 loginViewModel.login(usernameEditText.getText().toString(),
                         passwordEditText.getText().toString());
+            }
+        });
+
+        configureNavigation();
+    }
+
+    private void configureNavigation() {
+        Button loginButton = (Button) findViewById(R.id.login);
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+            }
+        });
+
+        Button signUpButton = (Button) findViewById(R.id.signUp);
+        signUpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoginActivity.this, SignUpActivity.class));
             }
         });
     }

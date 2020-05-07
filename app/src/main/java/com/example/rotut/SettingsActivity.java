@@ -20,7 +20,7 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE); //will hide the title
         getSupportActionBar().hide(); // hide the title bar
-        setContentView(R.layout.settings_activity);
+        setContentView(R.layout.settings);
         Switch message;
         Switch location;
         TextView update;

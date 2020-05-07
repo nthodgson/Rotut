@@ -13,6 +13,8 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 public class SettingsActivity extends AppCompatActivity {
 
     @Override
@@ -94,10 +96,11 @@ public class SettingsActivity extends AppCompatActivity {
         sign_out.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent check_update=new Intent(SettingsActivity.this,SignInActivity.class);
-                startActivity(check_update);
+                Intent sign_out=new Intent(SettingsActivity.this,SignInActivity.class);
+                startActivity(sign_out);
             }
         });
+
 
     }
 }

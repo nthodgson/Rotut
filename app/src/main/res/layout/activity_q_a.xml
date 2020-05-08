@@ -30,4 +30,32 @@
             app:layout_constraintStart_toStartOf="@+id/imageView14"
             app:layout_constraintTop_toTopOf="@+id/imageView14" />
 
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="402dp"
+            android:layout_height="112dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/q_how_long_did_this_project_take_you"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView14"
+            android:autofillHints="username" />
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="402dp"
+            android:layout_height="112dp"
+            android:autofillHints="username"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/a_about_a_few_weeks"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText6" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

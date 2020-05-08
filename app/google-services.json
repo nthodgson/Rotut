@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "348611951847",
+    "firebase_url": "https://rotut-f0b32.firebaseio.com",
+    "project_id": "rotut-f0b32",
+    "storage_bucket": "rotut-f0b32.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348611951847:android:5186798a48110e5ef47642",
+        "android_client_info": {
+          "package_name": "com.example.rotut"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348611951847-btntps5js4ptesqgprjd3eqd7npus80q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rotut",
+            "certificate_hash": "0ddbd0db8aab6b8a6c380f33d9c70c845e58a830"
+          }
+        },
+        {
+          "client_id": "348611951847-189ji7pn7cdr3kjl7emi779bqcfc7ohp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCd2DEMIwZuVvMS8u2ZZ_tykcL-pdZGCvU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348611951847-189ji7pn7cdr3kjl7emi779bqcfc7ohp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

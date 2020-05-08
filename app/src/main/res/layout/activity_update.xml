@@ -36,6 +36,7 @@
             android:layout_height="108dp"
             android:ems="10"
             android:text="@string/current_version_v_1_0"
+            android:gravity="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -56,6 +57,7 @@
             android:layout_height="49dp"
             android:text="@string/latest_version_v_1_0"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editText5" />
@@ -64,9 +66,10 @@
             android:id="@+id/textView38"
             android:layout_width="413dp"
             android:layout_height="168dp"
-            android:text="@string/the_app_do_not_need_to_be_updated"
+            android:text="@string/no_update_is_needed"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             android:textColor="#0E0E0E"
+            android:gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textView37" />

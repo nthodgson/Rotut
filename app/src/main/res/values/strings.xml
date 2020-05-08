@@ -46,4 +46,9 @@
     <string name="the_app_do_not_need_to_be_updated">The app do not need to be updated</string>
     <string name="q_how_long_did_this_project_take_you">Q: How long did this project take you ?</string>
     <string name="a_about_a_few_weeks">A: About a few weeks.</string>
+    <string name="no_update_is_needed">No update is needed</string>
+    <string name="profile">Profile</string>
+    <string name="account">Account</string>
+    <string name="wallet">Wallet</string>
+    <string name="edit_account">Edit Account</string>
 </resources>

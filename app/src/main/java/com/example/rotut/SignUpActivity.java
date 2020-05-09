@@ -11,9 +11,11 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.rotut.ui.login.LoginActivity;
-
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 public class SignUpActivity extends AppCompatActivity {
-
+    private FirebaseAuth mAuth;
+    private FirebaseAuth.AuthStateListener mAuthListener;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +31,7 @@ public class SignUpActivity extends AppCompatActivity {
         final EditText email = (EditText) findViewById(R.id.emailInput);
         final EditText passW = (EditText) findViewById(R.id.passwordInput);
         final EditText rePass = (EditText) findViewById(R.id.confirmNewPassword);
-
+        mAuth = FirebaseAuth.getInstance();
 
 
         Button signInButton = (Button) findViewById(R.id.signIn);
@@ -54,6 +56,8 @@ public class SignUpActivity extends AppCompatActivity {
                     intent.putExtra("lName", lName.getText().toString());
                     intent.putExtra("email", email.getText().toString());
                     intent.putExtra("pass", passW.getText().toString());
+                    mAuth.createUserWithEmailAndPassword(email.getText().toString(),passW.getText().toString());
+                    mAuth.signInWithEmailAndPassword(email.getText().toString(),passW.getText().toString());
                     startActivity(intent);
                 }else if(fName.getText().toString().equals("") ||
                         lName.getText().toString().equals("") ||
@@ -65,6 +69,11 @@ public class SignUpActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+    @Override
+    protected void onStart(){
+        super.onStart();
+        mAuth.addAuthStateListener(mAuthListener);
     }
 
 }

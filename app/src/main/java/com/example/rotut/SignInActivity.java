@@ -34,7 +34,7 @@ public class SignInActivity extends AppCompatActivity {
         getSupportActionBar().hide(); // hide the title bar
         usernameEditText = findViewById(R.id.emailInput);
         passwordEditText = findViewById(R.id.passwordInput);
-
+        
         mAuth = FirebaseAuth.getInstance();
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override

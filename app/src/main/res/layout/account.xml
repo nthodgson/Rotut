@@ -42,7 +42,7 @@
     <Button
         android:id="@+id/profile"
         android:layout_width="match_parent"
-        android:layout_height="151dp"
+        android:layout_height="0dp"
         android:background="#F1F1F1"
         android:fontFamily="sans-serif-light"
         android:text="@string/profile"
@@ -51,12 +51,14 @@
         app:layout_constraintBottom_toTopOf="@+id/wallet"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        />
 
     <Button
         android:id="@+id/wallet"
         android:layout_width="match_parent"
-        android:layout_height="151dp"
+        android:layout_height="0dp"
+
         android:background="#1E009EC7"
         android:fontFamily="sans-serif-light"
         android:text="@string/wallet"
@@ -65,12 +67,13 @@
         app:layout_constraintBottom_toTopOf="@+id/editAccount"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile" />
 
     <Button
         android:id="@+id/settings"
         android:layout_width="match_parent"
-        android:layout_height="151dp"
+        android:layout_height="0dp"
         android:background="#1E009EC7"
         android:fontFamily="sans-serif-light"
         android:text="settings"
@@ -79,12 +82,13 @@
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAccount" />
 
     <Button
         android:id="@+id/editAccount"
         android:layout_width="match_parent"
-        android:layout_height="151dp"
+        android:layout_height="0dp"
         android:background="#F1F1F1"
         android:fontFamily="sans-serif-light"
         android:text="@string/edit_account"
@@ -93,7 +97,8 @@
         app:layout_constraintBottom_toTopOf="@+id/settings"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wallet" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

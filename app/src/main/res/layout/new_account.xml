@@ -38,9 +38,11 @@
         android:ems="10"
         android:hint="Class Year"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textView39"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/school" />
+        app:layout_constraintTop_toBottomOf="@+id/school"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/school"
@@ -78,18 +80,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
-    <ImageView
-        android:id="@+id/imageView31"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView20"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.551"
-        app:srcCompat="@drawable/back_arrow_icon" />
-
     <Button
         android:id="@+id/createAccount2"
         android:layout_width="192dp"
@@ -120,13 +110,26 @@
         android:id="@+id/textView39"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:text="Classes Taken"
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/classesTaken"
-        app:layout_constraintStart_toStartOf="@+id/classesTaken"
-        app:layout_constraintTop_toBottomOf="@+id/classYear"
-        app:layout_constraintVertical_bias="0.763" />
+        app:layout_constraintStart_toStartOf="@+id/classesTaken" />
+
+    <ImageButton
+        android:id="@+id/backArrow5"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:adjustViewBounds="true"
+        android:background="#009EC7"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.466"
+        app:srcCompat="@drawable/back_arrow_icon" />
 
 
     <!--    <LinearLayout-->

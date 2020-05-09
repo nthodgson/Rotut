@@ -9,9 +9,12 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.CompoundButton;
+import android.widget.ImageButton;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class SettingsActivity extends AppCompatActivity {
 
@@ -26,6 +29,7 @@ public class SettingsActivity extends AppCompatActivity {
         TextView update;
         TextView about;
         Button sign_out;
+        ImageButton arrow;
         TextView Q_A;
         message=findViewById(R.id.switch3);
         location=findViewById(R.id.switch4);
@@ -33,6 +37,7 @@ public class SettingsActivity extends AppCompatActivity {
         about=findViewById(R.id.textView36);
         sign_out=findViewById(R.id.sign_out_button);
         Q_A=findViewById(R.id.textView35);
+        arrow=findViewById(R.id.backArrow4);
 
 
         message.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -94,10 +99,19 @@ public class SettingsActivity extends AppCompatActivity {
         sign_out.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent check_update=new Intent(SettingsActivity.this,SignInActivity.class);
-                startActivity(check_update);
+                Intent sign_out=new Intent(SettingsActivity.this,SignInActivity.class);
+                startActivity(sign_out);
             }
         });
+
+        arrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent go_back=new Intent(SettingsActivity.this,AccountActivity.class);
+                startActivity(go_back);
+            }
+        });
+
 
     }
 }

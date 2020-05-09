@@ -39,4 +39,16 @@
     <string name="q_and_a_center">Q and A Center</string>
     <string name="about_us">About Us</string>
     <string name="sign_out">Sign Out</string>
+    <string name="q_and_a">Q and A</string>
+    <string name="update">Update</string>
+    <string name="current_version_v_1_0">Current Version: V 1.0</string>
+    <string name="latest_version_v_1_0">Latest Version: V 1.0</string>
+    <string name="the_app_do_not_need_to_be_updated">The app do not need to be updated</string>
+    <string name="q_how_long_did_this_project_take_you">Q: How long did this project take you ?</string>
+    <string name="a_about_a_few_weeks">A: About a few weeks.</string>
+    <string name="no_update_is_needed">No update is needed</string>
+    <string name="profile">Profile</string>
+    <string name="account">Account</string>
+    <string name="wallet">Wallet</string>
+    <string name="edit_account">Edit Account</string>
 </resources>
